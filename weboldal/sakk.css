@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.focim {
+    text-align: center;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    background-color: lightsalmon;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.fooldal header {
+    padding: 20px;
+    background-color: grey;
+    color: white;
+    box-shadow: 10px 6px 0 rgba(125, 121, 121, 0.5);
+}
+
+.fooldal header, .fooldal article {
+    margin: 10px 6px 10px 6px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.fooldal article p {
+    padding: 20px;
+    background-color: white;
+    color: grey;
+    margin: 0;
+    /* margin: 10px 10px 5px 10px; */
+}
+
+footer {
+    background-color: lightsalmon;
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px 15px 30px 15px;
+    color: white;
+}
+
+.sakktablak {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sakktablak article {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+}
+
+.sakktablak article figure {
+    margin: 0;
+}
+
+.sakktablak article figure figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+
+.sakktablak article figure img:hover {
+    border: black 5px dotted;
+}
+
+.kep_magyarazat {
+    display: none;
+}
+
+@media all and (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fooldal header {
+        flex-basis: 23%;
+    }
+    .fooldal article {
+        flex-basis: 73%;
+    }
+
+    .sakktablak article {
+        flex-basis: 31%;
+    }
+
+    #header2 {
+        order: 4;
+    }
+    #header3 {
+        order: 5;
+    }
+    #article3 {
+        order: 6;
+    }
+    #article4 {
+        order: 7;
+    }
+    #header4 {
+        order: 8;
+    }
+}
